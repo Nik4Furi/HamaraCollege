@@ -1,0 +1,115 @@
+#nav {
+    text-align: center;
+    background: black;
+    width: 100%;
+    z-index: 1000;
+    height: 80px;
+}
+#nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+#nav ul li {
+    margin: 15px;
+    font-size: 2rem;
+    padding: 15px 5px;
+}
+#nav ul li a {
+    padding: 7px 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+
+}
+
+.action,
+#nav ul li:hover {
+    background-color: rgb(123, 108, 108);
+    /* background: var(--main-bg-col); */
+
+    color: white;
+}
+
+.drop-down {
+    display: none;
+}
+
+#nav ul li:hover .drop-down {
+    display: block;
+    position: absolute;
+    background: rgb(51, 47, 47);
+    /* background: var(--main-bg-col); */
+    border-radius: 20px;
+    margin-top: 15px;
+    margin-left: -31px;
+}
+
+#nav ul li:hover .drop-down ul {
+    display: block;
+    margin: 10px;
+}
+
+#nav ul li:hover .drop-down ul li {
+    width: 90%;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    text-align: left;
+}
+
+#nav ul li:hover .drop-down ul li:last-child {
+    border-bottom: none;
+}
+
+#nav ul li:hover .drop-down ul li a:hover {
+    color: burlywood;
+}
+
+header {
+    background-color: white;
+    display: flex;
+}
+
+#div1 {
+    width: 65%;
+    display: flex;
+    margin-right: 50px;
+    justify-content: end;
+    align-items: flex-start;
+}
+
+header div div {
+    padding: 1px 0px;
+    margin: 4px;
+}
+#div1 div:hover {
+    transition-duration: 3s;
+
+    transform: rotateZ(1800deg);
+}
+
+#div3 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.col1 {
+    width: 20%;
+    height: 300px;
+    overflow: hidden;
+    background-color: rgba(56, 17, 215, 0.8);
+    border-radius: 20px 20px 10px 10px;
+}
+.col2 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    border-radius: 20px;
+}
+.col3{
+    /* height: 246px; */
+    padding: 5px 0;
+}
+

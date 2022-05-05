@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;1,200;1,300&family=Orelega+One&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
+
+/* Css Reset  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Our responsive html attributes  */
+html{ 
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+/* All root elements are used in the web  */
+:root{
+    --font-1: 'Roboto', sans-serif;
+    --font-2:'Orelega One', cursive;
+    --font-3:  'Barlow Condensed', sans-serif;
+    --main-col:purple ;
+    --main-bg-col: rgb(210, 153, 210);
+}
+/* Navbar container  */
+#navbar{
+    display: flex;
+    background: black;
+    color: white;
+    width: 100%;
+    height: 5.9em;
+    
+}
+/* All h1 heading used this property */
+.h-primary{
+    font-size:  3.5rem;
+    font-weight: bold;
+    font-family: var(--font-1);
+   text-transform: capitalize;
+}
+/* All h2 heading used this property */
+.h-secondry{
+    font-size: 2.5rem;
+    font-weight: 900;
+   text-transform: capitalize;
+
+}
+/* All h3 heading used this property */
+.h-ternary{
+    font-size: 1.97rem;
+    font-weight: 700;
+   text-transform: capitalize;
+
+}
+/* For all primary paragraph you can used this property */
+.para{
+    font-size:1.9rem;;
+    font-weight: 500;
+    font-family: var(--font-2);
+}
+/* For all secondry or small or intro paragraph you can used this property */
+.para-sm{
+    font-size:  1.8rem;
+    font-weight: 200 ;
+    font-family: var(--font-3);
+}
+/* For all very small paragraph you can used this property */
+.para-sm-1{
+    font-size: 1rem;
+}
+/* You can use when you want text highlighting  */
+.mark{
+    color: var(--main-col);
+    text-transform: uppercase;
+}
+/* You can create this for using all the container size provided */
+.container{
+    width: 90%;
+    margin:10px auto;
+    padding: 7px 5px;
+}
+/* You can create this for using all the small-container size provided */
+.container-fluid{
+    width: 100%;
+    margin:10px 0;
+    padding: 10px 5px;
+}
+/* All the elements in the row sattled  */
+.row{
+    display: flex;
+    align-items: center;
+    margin: 5px 9px ;
+    padding:3px 9px ;
+  
+    
+}
+/* All the elements in the column sattled  */
+.col{
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    margin: 5px 9px ;
+    padding:3px 9px ;
+    flex-wrap: wrap;
+  
+}
+/* Provide the width 20% for specially left side  */
+.left{
+    width: 20%;
+    display: flex;
+}
+/* Provide the width 80% for specially right side  */
+.right{
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+/* All the cards containing this div with some properties */
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+.cards .card{
+    background: rgb(122, 5, 137);
+    color: white;
+    width: 24%;
+    padding: 3px 0px;
+    height: 30%;
+    margin: 5px 3px;
+
+}
+.cards .card:hover{
+    background: rgb(76, 3, 85);
+}
+/* You can use create any card same  */
+.card{
+    border: 2px solid var(--main-col);
+    border-radius: 10px;
+    width: 44%;
+}
+/* Its is similiar as card but some property is different just like img width  */
+.box{
+    width: 100%;
+    padding: 1px;
+    border: 2px solid var(--main-col);
+}
+.box img{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+/*Img:  You can use any img tag outer div mean you crate a div which have a img tag  */
+.img{
+    width: 77%;
+    margin: 0 4px;
+}
+/* For all images class you can contain this class for all img tag  */
+.images{
+    width: 100%;
+    border: 2px solid var(--main-col);
+    margin: 3px 5px;
+}
+/*Hroizontal Tag: This is used for lining and hr tags  */
+.hr{
+    width: 100%;
+    background: var(--main-col);
+    height: 3px;
+    border-radius: 3px;
+    margin: 4px 0;
+}
+/* This is used for creating the sidebar  */
+.border-shap{
+    padding: 5px 7px;
+    margin: 5px 0;
+    border-radius: 9px;
+    background: black;
+    cursor: pointer;
+}
+.border-shap:hover{
+    background: gray;
+}
+/* Button: This is used for all buttons which we will used  */
+.btn{
+    font-size: 1.9rem;
+    padding: 3px 12px;
+    margin: 0 5px;
+    border: 2px solid white;
+    border-radius: 9px;
+    font-weight: bold;
+    color: white;
+    background: var(--main-col);
+    cursor: pointer;
+    font-family: var(--font-1);
+}
+.btn:hover{
+    color: var(--main-col);
+    background-color: var(--main-bg-col);
+}
+/*Link: This is used only for the anchor tages */
+.anchor{
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 24px;
+    font-family: var(--font-1);
+    cursor: pointer;
+}
+.anchor:hover{
+    color: rgb(202, 186, 202);
+}
+/* Footer section is started  */
+#footer{
+    background: black; 
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 4px 7px;
+    color: white;
+    height: 50px;
+}
+
+/* Dashboard of the all the admin pages  */
+.dashboard{
+    width: 100%;
+    background: green;
+    border: 2px solid purple;
+}
+.dashboard-list{
+    list-style: none;
+    border: 2px solid white;
+    width: 100%;
+    background: yellow;
+    margin: 5px 0;
+
+}
+.dashboard-list li a{
+    text-decoration: none;
+    color: red;
+    padding: 5px 7px;
+    font-weight: bold;
+    font-size: 2.3rem;
+
+}
+/* responsive burger properties  */
+.burger{
+    position: absolute;
+    top: 188px;
+    right: 10px;
+    cursor: pointer;
+    display: none;
+}
+.burger .line{
+    width: 44px;
+    height: 5px;
+    background: white;
+    margin: 3px 5px;
+}

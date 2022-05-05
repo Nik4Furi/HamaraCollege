@@ -1,0 +1,90 @@
+/* 
+#head{
+    background-color: black;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: white;
+    
+} */
+/* #for{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+} */
+/* form{
+    width: 300px;
+    display: flex;
+    /* border: 2px solid black; */
+    /* border-radius: 20px;
+    flex-direction: column;
+    background-color: rgb(119, 107, 93);
+} */ 
+form {
+    margin: 7px 3px;
+    padding:7px 3px ;
+    font-size: 2rem;
+}
+input,select{
+    margin: 7px auto;
+    padding: 5px autos;
+    font-size: 2rem;
+    width: 100%;
+}
+#bta{
+    text-align: center;
+    margin: 5px;
+}
+table{
+    width: 80%;
+    margin: 9px auto;
+    font-size: 2rem;
+}
+th{
+    /* font-size: 20px; */
+}
+table,th,td{
+    border: 2px solid black;
+text-align: center;
+border-collapse: collapse;
+padding: 10px;
+background-color: rgba(148, 197, 197,0.2);
+}
+/* #footer{
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 3px 7px;
+    color: white;
+    height: 9vh;
+    position: absolute;
+    bottom: 0%;
+    margin-top: 20px;
+    
+}
+#footer p{
+    
+    font-size: 18px;
+}
+.mark {
+    color: purple;
+    text-transform: uppercase;
+}
+.h-secondry{
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    
+}
+.row{
+    display: flex;
+    align-items: center;
+    margin: 5px 9px ;
+    padding:3px 9px ;
+    
+} */

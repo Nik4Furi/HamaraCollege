@@ -1,0 +1,36 @@
+/* .admin-img{
+    width: 50%;
+
+} */
+.admin-img img{
+    border: 2px solid purple;
+    border-radius: 50%;
+}
+
+/* Tables Styling Container  */
+/* 1.Table  */
+    .table{
+        /* background: red; */
+        border: 3px solid var(--main-col);
+        width: 100%;
+        font-size: 1.3rem;
+    }
+/* 2.Head of table  */
+    .head-box{
+        /* border: 3px solid blue; */
+        /* background: green; */
+        width: 10%;
+        /* height: 45px; */
+        margin: 5px 9px;
+        border-collapse:collapse ;
+        padding: 5px 9px;
+
+    }
+    .t-box{
+        border: 3px solid var(--main-col);
+        /* background: rgb(198, 193, 46); */
+        width: 20%;
+        /* height: 45px; */
+        padding: 3px 5px;
+        /* display: flex; */
+    }

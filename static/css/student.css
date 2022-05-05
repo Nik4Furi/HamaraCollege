@@ -1,0 +1,153 @@
+/* student name and img container where you see the name and img of the logined student feeded by the admin */
+/* .student-container{
+    width: 100%;
+} */
+.banner{
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+    padding: 7px 10px;
+    align-items: center;
+}
+.banner-left{
+    width: 87%;
+    /* background-color: red; */
+}
+.banner-right{
+    width: 13%;
+    /* background-color: pink; */
+}
+/* student left container realted css  */
+.is-active{
+    background: var(--main-bg-col);
+}
+
+/* student right container realted css  */
+.box-img{
+    width: 8%;
+    border-radius: 10px;
+    border: 1px dotted var(--main-col);
+}
+.box-img img{
+    width: 100%;
+}
+/* ranging and realted the student-dashboard-container  */
+.box-skill{
+    margin: 10px 0;
+    border: 2px solid black;
+    /* background: red; */
+    width: 100%;
+    /* height: 20px; */
+    border-radius: 20px;
+}
+.h-para{
+    margin: 10px;
+
+}
+.parent-see-container{
+    margin: 5px 0;
+}
+.range{
+    margin: 3px 5px;
+    width: 40vw;
+    background: white;
+    height: 12px;
+    position: relative;
+    border-radius: 9px;
+    border: 3px solid var(--main-col);
+}
+.range #w-50{
+    width: 50%;
+}
+.range #w-60{
+    width: 60%;
+}
+.under-range{
+    border-radius: 9px;
+    border: 2px solid var(--main-col);
+    height: 100%;
+    width: 70%;
+    background: var(--main-bg-col);
+    /* padding-bottom: 3px;
+    margin-bottom: 5px; */
+    position: absolute;
+    top: 4%;
+    left: -1%;
+    animation: fill 3s  1s 1 linear ;
+    transition: all ease-in 2s;
+}
+@keyframes fill {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+/* your chart properties  */
+#myChart{
+    width:60% !important;
+    height: 300px !important;
+    font-size: 3rem;
+    /* color: white; */
+    /* background: rgb(76, 53, 76); */
+}
+
+
+
+
+
+
+
+
+
+/*
+.student-img{
+    position: absolute;
+    top: 5%;
+    right: 7%;
+}
+.student{
+    position: absolute;
+    top: 33%;
+    left: 3%;
+    /* border: 2px solid purple; */
+    /*background: white;
+}
+.stud-img{
+    width: 30%;
+    margin: 3px 5px;
+}
+.stud-img img{
+    width: 100%;
+    border-radius: 50%;
+    border:1px solid purple;
+}
+.student-container{
+    margin-top: 120px;
+    /* background: red; */
+   /* width: 100%;
+}
+
+.stu-right{
+    margin-top: 12px;
+    margin-left: 10px;
+    /* position: relative; */
+    /*width: 80%;
+    /* background: blue; */
+/*}
+.stu-left{
+    border: 2px solid purple;
+    border-radius: 12px;
+    width: 20%;
+    background: rgb(196, 153, 206);
+    height: 65vh;
+    /* position: fixed; */
+    /* top: 40%;
+    right: 8%; */
+/*}
+
+.stu-result{
+    margin: 10px 0;
+}
+

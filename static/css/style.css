@@ -1,0 +1,256 @@
+#navbar{
+    display: flex;
+    background: black;
+    color: white;
+    width: 100%;
+    height: 5.9em;
+    
+}
+.logo_img{
+    /* width: 3vw; */ 
+    margin: 5px 12px;
+    border-radius: 50%;
+    border: 3px solid white;
+    height: 80%;
+    cursor: pointer;
+}
+.navlist{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    /* flex-direction: r; */
+    
+    
+}
+.navlist a{
+    text-decoration: none;
+    color: white;
+    font-size: 2.9rem;
+    font-weight: bold;
+    padding: 24px;
+    font-family: var(--font-1);
+} 
+ .navlist a:hover{
+    color: rgb(202, 186, 202);
+    border-radius: 3px;
+    text-decoration: underline;
+    transition: .5s;
+}
+
+.one{
+    background: pink;
+    text-align: center;
+}
+.one ul{
+    display: inline-flex;
+    color: #fff;
+    list-style-type: none;
+}
+.one ul li{
+    width: 100%;
+    margin: 8px;
+    padding: 6px;
+    font-weight: bold;
+}
+/* .one ul li a{
+    text-decoration: none;
+    color: #fff;
+    margin: 20px;
+} */
+/* .one ul li:hover{
+    background: #2bab0d;
+   
+} */
+.two{
+    display: none;
+    z-index: 10;
+    font-size: 2rem;
+}
+.one ul li:hover .two{
+    display: block;
+    position: absolute;
+    /* background: #ff0000; */
+    margin-top: 10px;
+    margin-left: -15px;
+}
+.one ul li:hover .two ul{
+    display: block;
+    margin: 10px;
+}
+.one ul li:hover .two ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0px;
+    text-align: left;
+}
+.one ul li:hover .two ul li:last-child{
+    border-bottom: none;
+}
+#check{
+    display: none;
+}
+.checkbtn{
+    float: right;
+    margin-right: 80px;
+    padding: 15px;
+    font-size: 25px;
+    color: white; 
+    display: none;
+}
+/* About container section is started and here all the style is realted to about .html */
+.about-section{
+    width: 100%;
+    /* height: 35vh; */
+}
+.about-section .right{
+  width: 80%;
+  height: 100%;
+
+}
+ .about-section .left{
+    height: 100%;
+    width: 20%;
+}
+/* contact with developers */
+
+.contact-container{
+  width: 85%;
+  /* background: rgb(84, 137, 172); */
+  border-radius: 6px;
+  padding: 20px 60px 30px 40px;
+  box-shadow: 0 5px 10px rgba(15, 15, 15, 0.2);
+}
+.contact-container .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact-container .content .left-side{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+  font-size: 2rem;
+}
+.content .left-side::before{
+  content: '';
+  position: absolute;
+  height: 70%;
+  width: 2px;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #afafb6;
+}
+.content .left-side .details{
+  margin: 14px;
+  text-align: center;
+}
+.content .left-side .details i{
+  font-size: 30px;
+  color: #2b0bdf;
+  margin-bottom: 10px;
+}
+.content .left-side .details .topic{
+  font-size: 18px;
+  font-weight: 500;
+}
+.content .left-side .details .text-one,
+.content .left-side .details .text-two{
+  font-size: 14px;
+  color: #160102;
+}
+
+
+.contact-container .content .right-side{
+  width: 75%;
+  margin-left: 75px;
+}
+.content .right-side .topic-text{
+  font-size: 23px;
+  font-weight: 600;
+  color: #44259b;
+}
+.right-side .input-box{
+  height: 50px;
+  width: 100%;
+  margin: 12px 0;
+  font-size: 1.5rem;
+}
+.right-side .input-box input,
+.right-side .input-box textarea{
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  background: #eaebf1;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+}
+.right-side .message-box{
+  min-height: 110px;
+}
+.right-side .input-box textarea{
+  padding-top: 6px;
+}
+
+/* .right-side .button{
+  display: inline-block;
+  margin-top: 12px;
+}
+.right-side .button input[type="button"]{
+  color: rgb(235, 222, 222);
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #3a13a5;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button input[type="button"]:hover{
+  background: #3c17a3;
+} */
+
+@media (max-width: 950px) {
+  .contact-container{
+    width: 90%;
+    padding: 30px 40px 40px 35px ;
+  }
+  .contact-container .content .right-side{
+   width: 75%;
+   margin-left: 55px;
+}
+}
+@media (max-width: 820px) {
+  .contact-container{
+    margin: 40px 0;
+    height: 100%;
+  }
+  .contact-container .content{
+    flex-direction: column-reverse;
+  }
+ .contact-container .content .left-side{
+   width: 100%;
+   flex-direction: row;
+   margin-top: 40px;
+   justify-content: center;
+   flex-wrap: wrap;
+ }
+ .contact-container .content .left-side::before{
+   display: none;
+ }
+ .contact-container .content .right-side{
+   width: 100%;
+   margin-left: 0;
+ }
+}

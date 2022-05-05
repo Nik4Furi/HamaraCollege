@@ -1,0 +1,36 @@
+
+.cs-section{
+    border: 2px solid purple;
+    border-radius: 10px;
+    /* height: ; */
+    width: 220px;
+    font-size: 2rem;
+    /* background: black; */
+
+} 
+/* .cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+.cards .card{
+    background: rgb(122, 5, 137);
+    color: white;
+    */
+/* }
+.cards .card:hover{
+    background: rgb(76, 3, 85);
+    /* color: ; */
+    /* clip-path: ellipse(130px 140px at 10% 20%); */
+/* }  */
+.tabs .card .img{
+    width: 56%;
+    display: inline-block;
+    width: 45%;
+    margin: auto;
+}
+.tabs .card .img img{
+    width: 70%;
+}

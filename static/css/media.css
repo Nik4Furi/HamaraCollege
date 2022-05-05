@@ -1,0 +1,210 @@
+@media only screen and (max-width:930px) {
+
+    /* All utiles classes  */
+    header {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .row {
+        flex-direction: column;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .cards {
+        flex-wrap: wrap;
+    }
+
+    .cards .card {
+        width: 50%;
+        display: inline-block;
+    }
+
+    .card {
+        width: 50%;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    /* All style.css realted properties  */
+    #nav ul {
+        flex-direction: column;
+        display: none;
+    }
+
+    #div1 {
+        width: 30%;
+    }
+
+    /* About us container peroperties  */
+    .about-section .right {
+        width: 100%;
+    }
+
+    .media-w {
+        width: 65%;
+    }
+
+    .media-w .box {
+        width: 55%;
+        margin: auto;
+    }
+
+    .w-100 {
+        width: 100%;
+        display: block;
+    }
+
+    /* All facilities container properties  */
+    .hostel-img {
+        width: 88%;
+    }
+
+    /* departments realeated properties  */
+    .tabs .card {
+        width: 50%;
+    }
+
+    .tabs .card .img {
+        width: 7%;
+        display: block;
+        margin: auto;
+    }
+
+    .tabs .card .img img {
+        width: 20%;
+    }
+
+    .full-img-w {
+        width: 56%;
+        margin: auto;
+        display: inline-block;
+    }
+
+    .tab-container .card {
+        width: 50%;
+    }
+
+
+    /* All  user properites  */
+    .login-container .login-left {
+        width: 0%;
+        display: none;
+    }
+
+    .login-container .login-right {
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+
+    .student-section .left {
+        width: 80%;
+        margin: auto;
+    }
+
+    .student-section {
+        width: 100%;
+        display: block;
+        margin: 1px 0;
+    }
+
+    .student-section .pages {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .student-section .table {
+        width: 100%;
+        font-size: 1.70rem;
+        border-spacing: 0px;
+        border-collapse: collapse;
+        padding: 0;
+    }
+}
+
+
+/* if max-width is 830px  */
+@media only screen and (max-width:830px){
+    .cards .card{
+        width: 100%;
+    }
+    .btn{
+        font-size: 1rem;
+    }
+    /* All h1 heading used this property */
+.h-primary{
+    font-size:  3rem;
+    font-weight: bold;
+    font-family: var(--font-1);
+   text-transform: capitalize;
+}
+/* All h2 heading used this property */
+.h-secondry{
+    font-size: 2rem;
+    font-weight: 900;
+   text-transform: capitalize;
+
+}
+/* All h3 heading used this property */
+.h-ternary{
+    font-size: 1rem;
+    font-weight: 700;
+   text-transform: capitalize;
+
+}
+/* For all primary paragraph you can used this property */
+.para{
+    font-size:1rem;;
+    font-weight: 500;
+    font-family: var(--font-2);
+}
+/* For all secondry or small or intro paragraph you can used this property */
+.para-sm{
+    font-size:  0.97rem;
+    font-weight: 200 ;
+    font-family: var(--font-3);
+}
+/* For all very small paragraph you can used this property */
+.para-sm-1{
+    font-size: 1rem;
+}
+.table{
+    font-size: 1rem;
+}
+.cards .card .box img{
+    width: 50%;
+}
+
+.student-section {
+    width: 100%;
+    display: block;
+    margin: 1px 0;
+}
+
+.student-section .pages {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+}
+.pages .page {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.student-section .table {
+    width: 100%;
+    font-size: 1rem;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    padding: 0;
+}
+
+}
