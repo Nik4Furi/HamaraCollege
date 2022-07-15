@@ -1,20 +1,17 @@
 <?php
-$title = "Login for Parents";
-$links = '<link rel="stylesheet" href="../static/css/login.css">';
-require ('../includes/innerHeader.php');
-?>
-<?php
-require ('../includes/connect.php');
+    require ('../includes/_Connect.php');
+    $title = "Login for Parents";
+    $links = '<link rel="stylesheet" href="../static/css/login.css">';
+    require ('../includes/_InnerHeader.php');
 ?>
 
 <!-- Mani Container  -->
 <?php
-$heading = "When you look into your <sapn class='mark'> mother's eyes</sapn>, you know that is the purest love you can find on this earth.";
-$img_path = 'parents';
-$img_path_file = 'pare-0.png';
-$action_folder = 'parent';
-$action_file = 'parent';
-// require ('../includes/loginUser.php');
+    $heading = "When you look into your <sapn class='mark'> mother's eyes</sapn>, you know that is the purest love you can find on this earth.";
+    $img_path = 'parents';
+    $img_path_file = 'pare-0.png';
+    $action_folder = 'parent';
+    $action_file = 'parent';
 ?>
 
 
@@ -51,6 +48,7 @@ $action_file = 'parent';
             </form>
         </div>
 </section>
+
 <!-- check the username is logged or not  -->
 <?php
 if (isset($_POST['login'])) {
@@ -62,11 +60,12 @@ if (isset($_POST['login'])) {
     // check the result exist or not 
     if ($result) {
         // echo "YOu succesfully login";
-
     }
     else{
         echo "<script>alert('Sorry this is server error')</script>"; ?>
+
 <meta http-equiv="refresh" content="0; url = http://localhost/HamaraCollege/index.php" />
+
 <?php
     }
     $num = mysqli_num_rows( $result);
@@ -83,27 +82,30 @@ if (isset($_POST['login'])) {
   }  
   else{
       echo "<script>alert('You are fill wrong details')</script>"; ?>
+
 <meta http-equiv="refresh" content="0; url = http://localhost/HamaraCollege/parent/index.php" />
+
 <?php
   }
    if (isset($_SESSION['username'])) {
     ?>
 <meta http-equiv="refresh" content="0; url = http://localhost/HamaraCollege/parent/parent.php" />
 <?php
-   }
-}
-else{
-    echo "<script>alert('You are fill wrong details')</script>"; ?>
-<meta http-equiv="refresh" content="0; url = http://localhost/HamaraCollege/teacher/index.php" />
-<?php
-}
-}
-mysqli_close($conn);
-?>
+         }
+    }
+    else{
+        echo "<script>alert('You are fill wrong details')</script>"; ?>
 
+<meta http-equiv="refresh" content="0; url = http://localhost/HamaraCollege/teacher/index.php" />
+
+<?php
+    }
+    }
+    mysqli_close($conn);
+?>
 
 <!-- Footer container is started  -->
 <?php
 $script = '';
-require ('../includes/footer.php');
+require ('../includes/_Footer.php');
 ?>

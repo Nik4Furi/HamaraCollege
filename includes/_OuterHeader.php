@@ -5,20 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamara College
-        <?php echo $title;?>
-    </title>
+    <title>Welcome in <?php echo $title;?></title>
     <link rel="shortcut icon" href="./static/img/home/logo.png" type="image/x-icon">
+
     <!-- css links container  -->
     <link rel="stylesheet" href="./static/css/utiles.css">
     <link rel="stylesheet" href="./static/css/nav.css">
     <link rel="stylesheet" href="./static/css/style.css">
     <link rel="stylesheet" href="./static/css/media.css">
-    <?php
-     echo $links."<br>";
-     
-    ?>
-      
+    <?php  echo $links."<br>"; ?>      
 </head>
 
 <body>

@@ -1,22 +1,22 @@
 <?php
-$title = "Admin Dashboard add new student";
-$links = '<link rel="stylesheet" href="../static/css/form.css"><br>';
-require ('../includes/innerHeader.php');
+    require ('../includes/_Connect.php');
+    $title = "Admin Dashboard add new student";
+    $links = '<link rel="stylesheet" href="../static/css/form.css"><br>';
+    require ('../includes/_InnerHeader.php');
 ?>
 <?php
-require ('../includes/connect.php');
-$candidate = 'Admin';
-$candidate_relation = 'Admin';
+    $candidate = 'Admin';
+    $candidate_relation = 'Admin';
 
-// display query
-$clgid = $_GET['clgid'];
+    // display query
+    $clgid = $_GET['clgid'];
 
-$sql = 'select * from addadmin';
-$result = mysqli_query($conn, $sql);
-$row = mysqli_fetch_assoc($result);
+    $sql = 'select * from addadmin';
+    $result = mysqli_query($conn, $sql);
+    $row = mysqli_fetch_assoc($result);
 
-$branch_select = $row['branch'];
-$semester_select = $row['semester'];
+    $branch_select = $row['branch'];
+    $semester_select = $row['semester'];
 ?>
 
 <!-- Updatet the students details  -->
@@ -168,5 +168,5 @@ $semester_select = $row['semester'];
 <?php
 $script = ' <!-- all/main scripts  -->
 <script src="../static/js/main.js"></script> ';
-require ('../includes/footer.php');
+require ('../includes/_Footer.php');
 ?>

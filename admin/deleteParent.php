@@ -1,10 +1,10 @@
 <?php
 $title = "Admin Dashboard add new student";
 $links = '<link rel="stylesheet" href="../static/css/form.css"><br>';
-require ('../includes/innerHeader.php');
+require ('../includes/_InnerHeader.php');
 ?>
 <?php
-require ('../includes/connect.php');
+require ('../includes/_Connect.php');
 
 ?>
 
@@ -27,5 +27,5 @@ if ($result) {
 <?php
 $script = ' <!-- all/main scripts  -->
 <script src="../static/js/main.js"></script> ';
-require ('../includes/footer.php');
+require ('../includes/_Footer.php');
 ?>

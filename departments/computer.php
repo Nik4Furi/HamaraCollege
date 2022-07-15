@@ -1,13 +1,10 @@
 <?php
-$title = "Department of Computre Science Engineering";
-$links = '<link rel="stylesheet" href="../static/css/department.css"><br>
-<link rel="stylesheet" href="../static/css/gallery.css">';
-require ('../includes/innerHeader.php');
+    require ('../includes/_Connect.php');
+    $title = "Department of Computre Science Engineering";
+    $links = '<link rel="stylesheet" href="../static/css/department.css"><br>
+            <link rel="stylesheet" href="../static/css/gallery.css">';
+    require ('../includes/_InnerHeader.php');
 ?>
-<?php
-require ('../includes/connect.php');
-?>
-
 
 <!-- departments of the computer Science -->
 <?php
@@ -31,54 +28,48 @@ require ('../includes/connect.php');
     $department_teacher_fifth = "Subash Gupta";
     $department_teacher_fifth_intro = "Hello everyone , I am a teacher of your
     branch of computer science engineering . I shall teach about the machine learning.I am post graduate from the IIT Kanpur in 2019 in subject of Machine Learning";
+    
+    require ('../includes/_Departments.php');
 
+    // <!-- Footer container is started  -->
+    $script = '<script>
+        let burger = document.querySelector(".burger");
+        let line = document.querySelectorAll(".line");
+        let nav = document.getElementById("nav");
+        let navlist = document.getElementById("navlist");
 
+        burger.addEventListener("click", handleNav);
 
- require ('../includes/departments.php');
-?>
+        function handleNav(e) {
+            if ( nav.style.height == "34%") {
+            // console.log("this is if oe ssrweclick on ");
 
+                nav.style.height = "80px";
+                navlist.style.display = "none";
 
+            }
+            else{
+            // console.log("this is click on ");
 
-<!-- Footer container is started  -->
-<?php
-$script = '<script>
-let burger = document.querySelector(".burger");
-let line = document.querySelectorAll(".line");
-let nav = document.getElementById("nav");
-let navlist = document.getElementById("navlist");
+                nav.style.height = "34%";
+                navlist.style.display = "block";
+            }
 
-burger.addEventListener("click", handleNav);
+        }
+        </script>
 
-function handleNav(e) {
-    if ( nav.style.height == "34%") {
-    // console.log("this is if oe ssrweclick on ");
+        <!-- Script for the gallery  -->
+        <script>
+            let full_img_box = document.getElementById("full-img-box");
+            let full_img = document.getElementById("full-img");
 
-        nav.style.height = "80px";
-        navlist.style.display = "none";
-
-    }
-    else{
-    // console.log("this is click on ");
-
-        nav.style.height = "34%";
-        navlist.style.display = "block";
-    }
-
-}
-</script>
-
-<!-- Script for the gallery  -->
-<script>
-    let full_img_box = document.getElementById("full-img-box");
-    let full_img = document.getElementById("full-img");
-
-    function openFullImg(pic) {
-        full_img_box.style.display = "flex";
-        full_img.src = pic;
-    }
-    function closeFullImg() {
-        full_img_box.style.display = "none";
-    }
-</script>';
-require ('../includes/footer.php');
+            function openFullImg(pic) {
+                full_img_box.style.display = "flex";
+                full_img.src = pic;
+            }
+            function closeFullImg() {
+                full_img_box.style.display = "none";
+            }
+        </script>';
+    require ('../includes/_Footer.php');
 ?>

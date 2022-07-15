@@ -1,15 +1,11 @@
 <?php
-$title = "Home";
-$links = "";
-require ('./includes/outerheader.php');
-?>
-<?php
-require ('./includes/connect.php');
+    require ('./includes/_Connect.php');
+    $title = "HamaraCollege";
+    $links = "";
+    require ('./includes/_OuterHeader.php');
 ?>
 
-
-
-<!-- The  started the img container here you see the cruousor -->
+<!-- Starting the Home Page To Elaborate the Info about the "HamaraCollege"-->
 <main>
     <!-- Library img is here  -->
     <div class="img-box" style="width: 100%;">
@@ -94,5 +90,5 @@ require ('./includes/connect.php');
 
 <?php
 $script = "";
-require ('./includes/footer.php');
+require ('./includes/_Footer.php');
 ?>

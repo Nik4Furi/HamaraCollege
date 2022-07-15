@@ -1,21 +1,17 @@
 <?php
-$title = "Login for Student";
-$links = '<link rel="stylesheet" href="../static/css/login.css">';
-require ('../includes/innerHeader.php');
-?>
-<?php
-require ('../includes/connect.php');
-
+    require ('../includes/_Connect.php');
+    $title = "Login for Student";
+    $links = '<link rel="stylesheet" href="../static/css/login.css">';
+    require ('../includes/_InnerHeader.php');
 ?>
 
 <!-- Mani Container  -->
 <?php
-$heading = "The man who does not read <span class='mark'> books has no advantage over the one who cannot read them";
-$img_path = 'students';
-$img_path_file = 'stu-0.png';
-$action_folder = 'student';
-$action_file = 'student';
-// require ('../includes/loginUser.php');
+    $heading = "The man who does not read <span class='mark'> books has no advantage over the one who cannot read them";
+    $img_path = 'students';
+    $img_path_file = 'stu-0.png';
+    $action_folder = 'student';
+    $action_file = 'student';
 ?>
 
 <!-- studetn login page  -->
@@ -51,6 +47,7 @@ $action_file = 'student';
             </form>
         </div>
 </section>
+
 <!-- check the username is logged or not  -->
 <?php
 if (isset($_POST['login'])) {
@@ -62,7 +59,6 @@ if (isset($_POST['login'])) {
     // check the result exist or not 
     if ($result) {
         // echo "YOu succesfully login";
-
     }
     else{
         echo "Failed to login ".mysqli_connect_error($cnon, $sql);
@@ -82,25 +78,30 @@ if (isset($_POST['login'])) {
   else{
       echo "<script>alert('You are fill wrong details')</script>"; ?>
 <meta http-equiv="refresh" content="0; url = http://localhost/HamaraCollege/student/index.php" />
+
 <?php
   }
    if (isset($_SESSION['username'])) {
-    ?>
+?>
+
 <meta http-equiv="refresh" content="0; url = http://localhost/HamaraCollege/student/student.php" />
+
 <?php
-   }
-}
-else{
+        }
+    }
+    else{
     echo "<script>alert('You are fill wrong details')</script>"; ?>
+
 <meta http-equiv="refresh" content="0; url = http://localhost/HamaraCollege/student/index.php" />
+
 <?php
-}
-}
-// mysqli_close($conn);
+    }
+    }
+    // mysqli_close($conn);
 ?>
 
 <!-- Footer container is started  -->
 <?php
 $script = '';
-require ('../includes/footer.php');
+require ('../includes/_Footer.php');
 ?>

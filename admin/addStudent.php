@@ -1,12 +1,8 @@
 <?php
+require ('../includes/_Connect.php');
 $title = "Admin Dashboard add new student";
 $links = '<link rel="stylesheet" href="../static/css/form.css"><br>';
-require ('../includes/innerHeader.php');
-?>
-<?php
-require ('../includes/connect.php');
-
-
+require ('../includes/_InnerHeader.php');
 ?>
 
 <!-- Form to add the new student  -->
@@ -98,7 +94,7 @@ $candidate_relation = 'Student';
  
 <!-- Footer container is started  -->
 <?php
-$script = ' <!-- all/main scripts  -->
-<script src="../static/js/main.js"></script> ';
-require ('../includes/footer.php');
+    $script = ' <!-- all/main scripts  -->
+            <script src="../static/js/main.js"></script> ';
+    require ('../includes/_Footer.php');
 ?>

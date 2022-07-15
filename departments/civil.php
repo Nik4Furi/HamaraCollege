@@ -1,13 +1,10 @@
 <?php
-$title = "Department of Civil Engineering";
-$links = '<link rel="stylesheet" href="../static/css/department.css"><br>
-<link rel="stylesheet" href="../static/css/gallery.css">';
-require ('../includes/innerHeader.php');
+    require ('../includes/_Connect.php');
+    $title = "Department of Civil Engineering";
+    $links = '<link rel="stylesheet" href="../static/css/department.css"><br>
+              <link rel="stylesheet" href="../static/css/gallery.css">';
+    require ('../includes/_InnerHeader.php');
 ?>
-<?php
-require ('../includes/connect.php');
-?>
-
 
 <!-- departments of the computer Science -->
 <?php
@@ -32,27 +29,21 @@ require ('../includes/connect.php');
     $department_teacher_fifth_intro = "Hello everyone , I am a teacher of your
     branch of civil engineering . I shall teach about the buildings constructions.I am  graduate from the IIT Kanpur in 2020 in subject of Transportation Engineering.";
 
+     require ('../includes/_Departments.php');
 
+    // <!-- Footer container is started  -->
+    $script = ' <!-- Script for the gallery  -->
+    <script>
+        let full_img_box = document.getElementById("full-img-box");
+        let full_img = document.getElementById("full-img");
 
- require ('../includes/departments.php');
-?>
-
-
-
-<!-- Footer container is started  -->
-<?php
-$script = ' <!-- Script for the gallery  -->
-<script>
-    let full_img_box = document.getElementById("full-img-box");
-    let full_img = document.getElementById("full-img");
-
-    function openFullImg(pic) {
-        full_img_box.style.display = "flex";
-        full_img.src = pic;
-    }
-    function closeFullImg() {
-        full_img_box.style.display = "none";
-    }
-</script>';
-require ('../includes/footer.php');
+        function openFullImg(pic) {
+            full_img_box.style.display = "flex";
+            full_img.src = pic;
+        }
+        function closeFullImg() {
+            full_img_box.style.display = "none";
+        }
+    </script>';
+    require ('../includes/_Footer.php');
 ?>

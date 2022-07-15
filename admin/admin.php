@@ -1,28 +1,25 @@
 <?php
-session_start();
-$title = "Admin Dashboard";
-$links = '<link rel="stylesheet" href="../static/css/student.css"><br>
-          <link rel="stylesheet" href="../static/css/admin.css"><br>
-          <link rel="stylesheet" href="../static/css/main.css"><br>
-          <!-- chart script  -->
-          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>';
-require ('../includes/innerHeader.php');
-?>
-<?php
-require ('../includes/connect.php');
+    session_start();
+    require ('../includes/_Connect.php');
+    $title = "Admin Dashboard";
+    $links = '<link rel="stylesheet" href="../static/css/student.css"><br>
+            <link rel="stylesheet" href="../static/css/admin.css"><br>
+            <link rel="stylesheet" href="../static/css/main.css"><br>
+            <!-- chart script  -->
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>';
+    require ('../includes/_InnerHeader.php');
 ?>
 
 <!-- Dashboard container is start from here you can see that  -->
 <?php
-// $username_logged = $_SESSION['username'];
-$img_path = 'students';
-$img_path_file = 'stu-0.png';
+    $img_path = 'students';
+    $img_path_file = 'stu-0.png';
 
-// All dashboards titles 
- $dashboard_title_first = 'Admins';  
- $dashboard_title_second = 'Students';  
- $dashboard_title_third = 'Parents';  
- $dashboard_title_fourth = 'Teachers';  
+    // All dashboards titles 
+    $dashboard_title_first = 'Admins';  
+    $dashboard_title_second = 'Students';  
+    $dashboard_title_third = 'Parents';  
+    $dashboard_title_fourth = 'Teachers';  
 ?>
 
 <!-- studetn deatils containing from here  -->
@@ -326,7 +323,7 @@ $img_path_file = 'stu-0.png';
 
 <!-- Footer container is started  -->
 <?php
-$script = ' <!-- all/main scripts  -->
-<script src="../static/js/main.js"></script> ';
-require ('../includes/footer.php');
+    $script = ' <!-- all/main scripts  -->
+                <script src="../static/js/main.js"></script> ';
+    require ('../includes/_Footer.php');
 ?>

@@ -1,11 +1,9 @@
 <?php
-$title = "About";
-$links = ' <link rel="stylesheet" href="./static/css/admin.css"><br>';
-require ('./includes/outerHeader.php');
+    require ('./includes/_Connect.php');
+    $title = "Info About PG Programes Of HamaraCollege";
+    $links = '<link rel="stylesheet" href="./static/css/admin.css"><br>';
+    require ('./includes/_OuterHeader.php');
 ?>
-<?php
-    require ('./includes/connect.php');
- ?>
 
 <!-- our main container is started form here  -->
 <section class="pgprogrames-container col ">
@@ -64,8 +62,7 @@ require ('./includes/outerHeader.php');
 </section>
 
 <!-- Footer section  -->
-
 <?php
 $script = '';
-require ('./includes/footer.php');
+require ('./includes/_Footer.php');
 ?>

@@ -1,22 +1,23 @@
 <?php
-$title = "Admin Dashboard add new student";
-$links = '<link rel="stylesheet" href="../static/css/form.css"><br>';
-require ('../includes/innerHeader.php');
+    require ('../includes/_Connect.php');
+    $title = "Admin Dashboard add new student";
+    $links = '<link rel="stylesheet" href="../static/css/form.css"><br>';
+    require ('../includes/_InnerHeader.php');
 ?>
+
 <?php
-require ('../includes/connect.php');
-$candidate = 'Parent';
-$candidate_relation = 'Student';
+    $candidate = 'Parent';
+    $candidate_relation = 'Student';
 
-// display query
-$clgid = $_GET['clgid'];
+    // display query
+    $clgid = $_GET['clgid'];
 
-$sql = 'select * from addparent';
-$result = mysqli_query($conn, $sql);
-$row = mysqli_fetch_assoc($result);
+    $sql = 'select * from addparent';
+    $result = mysqli_query($conn, $sql);
+    $row = mysqli_fetch_assoc($result);
 
-$branch_select = $row['parent_children_branch'];
-$semester_select = $row['parent_children_semester'];
+    $branch_select = $row['parent_children_branch'];
+    $semester_select = $row['parent_children_semester'];
 ?>
 
 <!-- Updatet the students details  -->
@@ -168,7 +169,7 @@ $semester_select = $row['parent_children_semester'];
 
 <!-- Footer container is started  -->
 <?php
-$script = ' <!-- all/main scripts  -->
-<script src="../static/js/main.js"></script> ';
-require ('../includes/footer.php');
+    $script = ' <!-- all/main scripts  -->
+    <script src="../static/js/main.js"></script> ';
+    require ('../includes/_Footer.php');
 ?>

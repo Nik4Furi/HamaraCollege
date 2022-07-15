@@ -1,16 +1,14 @@
 <?php
-$title = "About";
-$links = ' <link rel="stylesheet" href="./static/css/admin.css"><br>';
-require ('./includes/outerHeader.php');
+    require ('./includes/_Connect.php');
+    $title = "About Page of HamaraCollege";
+    $links = ' <link rel="stylesheet" href="./static/css/admin.css"><br>';
+    require ('./includes/_OuterHeader.php');
 ?>
-<?php
-    require ('./includes/connect.php');
- ?>
 
-<!-- our main content container  -->
+<!-- our main content of About Page start form here -->
 
 <!-- our main container is started form here  -->
-<section class="pgprogrames-container col ">
+<section class="pgprogrames-container col " style="min-height:60vh">
     <h1 class="h-primary">You read about the our college <span class="mark">UG programes</span></h1>
     <p class="para">You can read about the programes, given or presented by our college</p>
     <!-- b.tech programe intro  -->
@@ -59,8 +57,7 @@ require ('./includes/outerHeader.php');
 
 
 <!-- Footer section  -->
-
 <?php
 $script = '';
-require ('./includes/footer.php');
+require ('./includes/_Footer.php');
 ?>

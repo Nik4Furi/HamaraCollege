@@ -1,20 +1,17 @@
 <?php
+require ('../includes/_Connect.php'); 
 $title = "Login for Admin";
 $links = '<link rel="stylesheet" href="../static/css/login.css">';
-require ('../includes/innerHeader.php');
-?>
-<?php
-require ('../includes/connect.php'); 
+require ('../includes/_InnerHeader.php');
 ?>
 
 <!-- Mani Container  -->
 <?php
-$heading = "Keep your face always toward the sunshine, and <span class='mark'>shadows will fall behind you.</span>";
-$img_path = 'admin';
-$img_path_file = 'adm-0.png';
-$action_folder = 'admin';
-$action_file = 'admin';
-// require ('../includes/loginUser.php');
+    $heading = "Keep your face always toward the sunshine, and <span class='mark'>shadows will fall behind you.</span>";
+    $img_path = 'admin';
+    $img_path_file = 'adm-0.png';
+    $action_folder = 'admin';
+    $action_file = 'admin';
 ?>
 
 <!-- studetn login page  -->
@@ -103,5 +100,5 @@ mysqli_close($conn);
 <!-- Footer container is started  -->
 <?php
 $script = '';
-require ('../includes/footer.php');
+require ('../includes/_Footer.php');
 ?>

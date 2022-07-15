@@ -1,11 +1,8 @@
 <?php
-$title = "About";
-$links = ' <!-- Facilites css  -->
-<link rel="stylesheet" href="./static/css/facility.css"> ';
-require ('./includes/outerHeader.php');
-?>
-<?php
-require ('./includes/connect.php');
+    require ('./includes/_Connect.php');
+    $title = "facilites In HamaraCollege";
+    $links = '<link rel="stylesheet" href="./static/css/facility.css"> ';
+    require ('./includes/_OuterHeader.php');
 ?> 
 
 <!-- Facilites container is here you see the facilites in the clg  -->
@@ -138,9 +135,8 @@ require ('./includes/connect.php');
 
 </section>
 
-
 <!-- Footer container is started  -->
 <?php
 $script = "";
-require ('./includes/footer.php');
+require ('./includes/_Footer.php');
 ?>

@@ -1,20 +1,17 @@
 <?php
+require ('../includes/_Connect.php');
 $title = "Login for Teacher";
 $links = '<link rel="stylesheet" href="../static/css/login.css">';
-require ('../includes/innerHeader.php');
-?>
-<?php
-require ('../includes/connect.php');
+require ('../includes/_InnerHeader.php');
 ?>
 
 <!-- Main Container  -->
 <?php
-$heading = "If you are planning for a year, sow rice; if you are planning for a decade, plant trees; if you are planning for a lifetime, <span class='mark'>educate people.</span>";
-$img_path = 'teachers';
-$img_path_file = 'tec-0.png';
-$action_folder = 'teacher';
-$action_file = 'teacher';
-// require ('../includes/loginUser.php');
+    $heading = "If you are planning for a year, sow rice; if you are planning for a decade, plant trees; if you are planning for a lifetime, <span class='mark'>educate people.</span>";
+    $img_path = 'teachers';
+    $img_path_file = 'tec-0.png';
+    $action_folder = 'teacher';
+    $action_file = 'teacher';
 ?>
 
 <!-- studetn login page  -->
@@ -52,58 +49,63 @@ $action_file = 'teacher';
 </section>
 <!-- check the username is logged or not  -->
 <?php
-if (isset($_POST['login'])) {
-    $username = $_POST['username'];
-    $password = $_POST['password'];
+    if (isset($_POST['login'])) {
+        $username = $_POST['username'];
+        $password = $_POST['password'];
 
-    $sql = "select * from addteacher where clgid = '$username' && password = '$password'";
-    $result = mysqli_query($conn,$sql);
-    // check the result exist or not 
-    if ($result) {
-        // echo "YOu succesfully login";
+        $sql = "select * from addteacher where clgid = '$username' && password = '$password'";
+        $result = mysqli_query($conn,$sql);
+        // check the result exist or not 
+        if ($result) {
+            // echo "YOu succesfully login";
 
-    }
-    else{
-        echo "<script>alert('You are fill wrong details')</script>"; ?>
+        }
+        else{
+            echo "<script>alert('You are fill wrong details')</script>"; ?>
+
 <meta http-equiv="refresh" content="0; url = http://localhost/HamaraCollege/admin/index.php" />
+
 <?php
     }
     $num = mysqli_num_rows( $result);
     // echo $num;
     if ($num == 1) {
      //Checking the seesion is started or create
-  $row = mysqli_fetch_array($result);
-  if (is_array($row)) {
-    $_SESSION['username'] = $row['clgid'];
-    $_SESSION['password'] = $row['password'];
-    $_SESSION['name'] = $row['name'];
-    // echo $_SESSION['username'] ;
-    // echo $_SESSION['password'] ;
-  }  
-  else{
-      echo "<script>alert('You are fill wrong details')</script>"; ?>
-<meta http-equiv="refresh" content="0; url = http://localhost/HamaraCollege/teacher/index.php" />
-<?php
-  }
-   if (isset($_SESSION['username'])) {
-    ?>
-<meta http-equiv="refresh" content="0; url = http://localhost/HamaraCollege/teacher/teacher.php" />
-<?php
-   }
-}
-else{
-    echo "<script>alert('You are fill wrong details')</script>"; ?>
-<meta http-equiv="refresh" content="0; url = http://localhost/HamaraCollege/teacher/index.php" />
-<?php
-}
-}
-mysqli_close($conn);
+    $row = mysqli_fetch_array($result);
+    if (is_array($row)) {
+        $_SESSION['username'] = $row['clgid'];
+        $_SESSION['password'] = $row['password'];
+        $_SESSION['name'] = $row['name'];
+    }  
+    else{
+        echo "<script>alert('You are fill wrong details')</script>"; ?>
 
+<meta http-equiv="refresh" content="0; url = http://localhost/HamaraCollege/teacher/index.php" />
+
+<?php
+    }
+    if (isset($_SESSION['username'])) {
+?>
+
+<meta http-equiv="refresh" content="0; url = http://localhost/HamaraCollege/teacher/teacher.php" />
+
+<?php
+        }
+    }
+    else{
+        echo "<script>alert('You are fill wrong details')</script>"; ?>
+
+<meta http-equiv="refresh" content="0; url = http://localhost/HamaraCollege/teacher/index.php" />
+
+<?php
+    }
+    }
+    mysqli_close($conn);
 ?>
 
 
 <!-- Footer container is started  -->
 <?php
 $script = '';
-require ('../includes/footer.php');
+require ('../includes/_Footer.php');
 ?>
